@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    display: flex;
+    gap: 2rem;
+    margin-left: 10rem;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 0.5rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+#buscador{
+    background-color: rgb(231, 225, 225);
+    border: none;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.company-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+}
+.company{
+    font-weight: 600;
+    font-size: 13px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.2rem;
+    font-size: 13px;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.buttons span{
+    color:rgb(131, 124, 124);
+    cursor: pointer;
+}
+.buttons span:hover{
+    color:rgb(28, 28, 168);
+    transition: .5s;
+}
+.producto img{
+    /*width:15em*/
+    width: 90%;
+    height: 10em;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   
+}
+.producto-detalles{
+    margin-top: 0.5rem;
+
+}
+.producto-detalles p{
+    font-size: 12px;
+    color: rgb(136, 136, 214);
+}
+.producto-detalles span{
+    font-size: 12px;
+    font-weight: 700;
+}
+.main-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+  
+    gap: 0.8rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-bottom: 5rem;
+    
+    
+}
+
+@media screen and (max-width:1200px) {
+
+    .main-center{
+        grid-template-columns: 1fr 1fr;
+    }
+    .producto img{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:900px){
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.2rem;
+}
+  .main-center{
+    grid-template-columns: 1fr;
+
+    
+    margin-left: 0.5rem;
+  }
+ 
+  .producto img{
+    width: 80%;
+    height: 15em;
+  }
+ 
+  #buscador{
+    width: 50%;
+  }
+}
+.disabled{
+    display: none;
+}
